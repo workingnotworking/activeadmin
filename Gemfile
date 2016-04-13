@@ -11,7 +11,7 @@ gem 'jquery-ui-rails', rails_version[0] == '3' ? '~> 4.0' : '~> 5.0'
 
 gem 'test-unit', '~> 3.0' if rails_version[0] == '3'
 
-if rails_version == '> 5.x'
+#if rails_version == '> 5.x'
   # Note: when updating this list, be sure to also update the README
   gem 'ransack',    github: 'activerecord-hackery/ransack'
   gem 'kaminari',   github: 'amatsuda/kaminari', branch: 'master'
@@ -21,7 +21,7 @@ if rails_version == '> 5.x'
   gem 'rack-mini-profiler', github: 'MiniProfiler/rack-mini-profiler'
   gem 'database_cleaner',  github: 'DatabaseCleaner/database_cleaner'
   gem 'activerecord-jdbc-adapter', github: 'jruby/activerecord-jdbc-adapter', platforms: :jruby
-end
+#end
 
 gem 'mime-types', '< 3' # Remove this line when we drop support for Ruby 1.9
 
